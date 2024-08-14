@@ -189,7 +189,8 @@
         "ENV DOCKER_VERSION(\\=|\\s)(?<currentValue>.*?)\\n"
       ],
       "depNameTemplate": "moby/moby",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v?(?<version>\\d+\\.\\d+\\.\\d+)$"
     },
     {
       "customType": "regex",
